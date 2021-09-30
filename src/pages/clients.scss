@@ -1,0 +1,99 @@
+.clients {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &_left {
+    width: 50%;
+    height: 93vh;
+    .create {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .avatar {
+        position: relative;
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .plus {
+          position: absolute;
+          top: 0;
+          right: 55px;
+        }
+        img {
+          width: 165px;
+          height: 165px;
+          border-radius: 50%;
+        }
+      }
+      .done_btn {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        bottom: 63px;
+      }
+    }
+    .create_btn {
+      width: 100%;
+      height: 82%;
+      position: relative;
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      h1 {
+        margin-left: 24px;
+      }
+      .back {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #22252a;
+        border: none;
+      }
+    }
+  }
+  &_right {
+    width: 50%;
+    height: 93vh;
+    border-left: #f3f3f3 4px solid;
+    padding-left: 25px;
+    .container {
+      width: calc(100%-25px);
+      height: 100%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+    }
+    > p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
+      color: rgba(34, 37, 42, 0.5);
+    }
+  }
+}

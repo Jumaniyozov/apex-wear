@@ -1,0 +1,74 @@
+.order {
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+  .small_icon {
+    width: 18px;
+    height: 18px;
+  }
+  .medium_icon {
+    width: 30px;
+    height: 30px;
+  }
+  img {
+    width: 55%;
+    height: 40vw;
+  }
+  &_info {
+    width: calc(40%-40px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 40px;
+    .calc {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 5px;
+      .btn {
+        margin-top: 600px;
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: rgba(8, 0, 0, 0.5);
+      line-height: 19px;
+      margin: 0;
+
+      span {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        color: rgba(34, 37, 42, 0.5);
+      }
+    }
+  }
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}

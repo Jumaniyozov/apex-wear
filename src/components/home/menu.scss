@@ -1,0 +1,61 @@
+.menu {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 29px 22px;
+  h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  hr {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    background: #64666a;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      color: #fff;
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 278px;
+      margin-top: 40px;
+      p {
+        margin: 0;
+        margin-left: 21px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+    }
+    .quit {
+      color: #ff5d47;
+      margin-top: 66px;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

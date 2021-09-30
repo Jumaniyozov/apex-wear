@@ -1,0 +1,21 @@
+.checks_right_search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 10px 20px;
+  input {
+    width: 90%;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    // color: rgba(35, 41, 51, 0.3);
+  }
+}

@@ -1,0 +1,55 @@
+.card {
+  width: 49%;
+  min-height: 9vw;
+  background: #f3f3f3;
+  border-radius: 15.9122px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  div {
+    width: 70%;
+    padding: 10px;
+    p {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      /* identical to box height, or 160% */
+
+      color: rgba(34, 37, 42, 0.3);
+    }
+    .calc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      p {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        /* identical to box height, or 160% */
+
+        color: #22252a;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* or 141% */
+
+      color: #22252a;
+    }
+  }
+  img {
+    width: 30%;
+    border-radius: 15.9122px;
+    min-height: 9vw;
+  }
+}

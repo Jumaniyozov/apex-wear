@@ -1,0 +1,50 @@
+.basket {
+  padding: 0 10px;
+  .container {
+    padding-top: 50px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_left {
+      width: 65%;
+      height: 80vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    &_right {
+      width: 35%;
+      height: 80vh;
+      .user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background: #f3f3f3;
+        border-radius: 10px;
+        padding: 0 10px;
+        border: 0;
+        p {
+          text-align: left;
+          flex: 1;
+          align-self: left;
+          margin-left: 10px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: rgba(34, 37, 42, 0.5);
+        }
+      }
+    }
+  }
+}
