@@ -19,6 +19,7 @@ function Menu() {
   useEffect(() => {
     if (!loggedIn) {
       sessionStorage.removeItem('uid_warehouse');
+      sessionStorage.removeItem('userToken');
       history.push('/');
     }
   }, [history, loggedIn]);

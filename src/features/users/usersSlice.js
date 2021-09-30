@@ -7,9 +7,8 @@ export const fetchLoggingUser = createAsyncThunk(
   'users/fetchLoggingUser',
   async (props, { rejectWithValue }) => {
     const response = await axios.get(ENDPOINT, {
-      auth: {
-        username: props.login,
-        password: props.password,
+      headers: {
+        Authorization: `Basic ${props.userToken}`,
       },
     });
     return response.data;
@@ -22,6 +21,7 @@ export const logoutUser = createAsyncThunk('users/logoutUser', async () => {
 
 const initialState = {
   user: {},
+  userToken: '',
   loggedIn: false,
   errors: '',
   loading: false,
